@@ -51,7 +51,6 @@ get_data_db_azurecreds <- function(server, database, uid, pwd = "pwd_not_set", a
         )
         dbDisconnect(con)
         rm(con, con_str, pwd, uid, auth, database, server, driver)
-        gc()
         return(raw)
 
 }

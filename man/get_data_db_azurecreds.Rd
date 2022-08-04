@@ -8,7 +8,7 @@ get_data_db_azurecreds(
   server,
   database,
   uid,
-  pwd,
+  pwd = "pwd_not_set",
   auth = "sql",
   query = "SELECT 'No query given.';"
 )
