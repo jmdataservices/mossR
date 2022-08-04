@@ -8,7 +8,7 @@
 #' @param auth Either "sql" or "ad", defaults as SQL - alternative is for Azure Active Directory login
 #' @param query The query to be run
 
-get_data_db_azurecreds <- function(server, database, uid, pwd, auth = "sql", query = "SELECT 'No query given.';") {
+get_data_db_azurecreds <- function(server, database, uid, pwd = "pwd_not_set", auth = "sql", query = "SELECT 'No query given.';") {
 
         driver <- "driver={ODBC Driver 17 for SQL Server};"
         server <- paste0("server=", server, ";")
