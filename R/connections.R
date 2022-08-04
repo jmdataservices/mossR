@@ -10,7 +10,7 @@
 
 get_data_db_azurecreds <- function(server, database, uid, pwd, auth = "sql", query = "SELECT 'No query given.';") {
 
-        driver <- "driver={ODBC Driver 17 for SQL Server;"
+        driver <- "driver={ODBC Driver 17 for SQL Server};"
         server <- paste0("server=", server, ";")
         database <- paste0("database=", database, ";")
         uid <- paste0("uid=", uid, ";")
