@@ -19,6 +19,5 @@ Depends:
     rvest,
     jsonlite,
     GGally,
-    MASS,
     AzureStor,
     uuid
