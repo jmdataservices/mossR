@@ -20,4 +20,5 @@ Depends:
     jsonlite,
     GGally,
     AzureStor,
-    uuid
+    uuid,
+    odbc

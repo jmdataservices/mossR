@@ -3,17 +3,17 @@
 #' Does not currently include standardised format.
 
 theme_moss <- function() {
-        theme_minimal() +
-        theme(
-                panel.grid = element_blank(),
-                plot.title = element_text(size = 22, hjust = 0.5),
-                plot.subtitle = element_text(size = 18, hjust = 0.5),
-                plot.caption = element_text(size = 11, face = "italic"),
-                axis.title = element_text(size = 16, face = "bold", color = "grey40"),
-                axis.text = element_text(size = 14, color = "grey60"),
-                strip.text = element_text(size = 16, face = "bold", color = "grey40"),
-                strip.background = element_rect(color = NULL),
-                legend.title = element_blank(),
+        ggplot2::theme_minimal() +
+        ggplot2::theme(
+                panel.grid = ggplot2::element_blank(),
+                plot.title = ggplot2::element_text(size = 22, hjust = 0.5),
+                plot.subtitle = ggplot2::element_text(size = 18, hjust = 0.5),
+                plot.caption = ggplot2::element_text(size = 11, face = "italic"),
+                axis.title = ggplot2::element_text(size = 16, face = "bold", color = "grey40"),
+                axis.text = ggplot2::element_text(size = 14, color = "grey60"),
+                strip.text = ggplot2::element_text(size = 16, face = "bold", color = "grey40"),
+                strip.background = ggplot2::element_rect(color = NULL),
+                legend.title = ggplot2::element_blank(),
                 legend.position = "none"
         )
 }
