@@ -1,4 +1,5 @@
 exportPattern("^[[:alpha:]]+")
+
 import(tidyverse)
 import(lubridate)
 import(readxl)
@@ -8,3 +9,5 @@ import(rvest)
 import(jsonlite)
 import(MASS)
 import(GGally)
+import(AzureStor)
+import(uuid)
