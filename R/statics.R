@@ -23,6 +23,6 @@ theme_moss <- function() {
 #' Currently includes only 'lows' and 'highs'.
 
 colors_moss <- list(
-        lows <- c("azure2", "snow", "whitesmoke", "grey90", "seagreen"),
-        highs <- c("firebrick1", "indianred", "hotpint", "cyan", "chartreuse")
+        lows = c("azure2", "snow", "whitesmoke", "grey90", "seagreen"),
+        highs = c("firebrick1", "indianred", "hotpint", "cyan", "chartreuse")
 )

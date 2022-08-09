@@ -75,7 +75,7 @@ get_data_dl_azurekey <- function(endpoint, key, container, directory) {
                 container
         )
 
-        st_files <- list_adls_files(
+        st_files <- AzureStor::list_adls_files(
                 st_cont,
                 dir = directory
         )
