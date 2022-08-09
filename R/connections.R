@@ -54,3 +54,31 @@ get_data_db_azurecreds <- function(server, database, uid, pwd = "pwd_not_set", a
         return(raw)
 
 }
+
+
+#' A Function to Gain Rapid Access to an Azure Gen2 Data Lake
+#'
+#' @param endpoint The endpoint of the data lake being accessed
+#' @param key The access key for the endpoint
+#' @param container The container being accesses
+#' @param directory The directory for which we would like to collect the metadata
+
+get_data_dl_azurekey <- function(endpoint, key, container, directory) {
+
+        st_ep <- AzureStor::adls_endpoint(
+                endpoint = endpoint,
+                key = key
+        )
+
+        st_cont <- AzureStor::adls_filesystem(
+                st_ep,
+                container
+        )
+
+        st_files <- list_adls_files(
+                st_cont,
+                dir = directory
+        )
+
+        return(st_files)
+}
