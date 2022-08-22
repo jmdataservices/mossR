@@ -16,7 +16,6 @@ theme_moss <- function() {
                 strip.text = ggplot2::element_text(size = 16, face = "bold", color = "grey40"),
                 strip.background = ggplot2::element_rect(color = "white"),
                 legend.title = ggplot2::element_blank(),
-                legend.title = element_blank(),
                 legend.position = "none"
         )
 }
