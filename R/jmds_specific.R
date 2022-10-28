@@ -34,8 +34,8 @@ jmds_push_analysis_storage <- function(file, destination_file) {
 jmds_push_analysis_record <- function(destination_file, analysis_name, analysis_desc) {
 
         vault_name <- "kvjmds"
-        uid_secret <- "sqladminuid"
-        pwd_secret <- "sqladminpass"
+        uid_secret <- "sqlwriteruid"
+        pwd_secret <- "sqlwriterpass"
         server <- "jmds.database.windows.net"
         database <- "jmds"
         table_name <- "mdp.Analyses"
