@@ -20,6 +20,19 @@ theme_moss <- function() {
         )
 }
 
+theme_msc <- function() {
+        theme_minimal() +
+                theme(
+                        panel.grid = element_blank(),
+                        plot.title = element_text(hjust = 0.5, size = 20),
+                        plot.subtitle = element_text(hjust = 0.5, size = 16, color = "grey50"),
+                        axis.title = element_text(face = "bold", size = 14),
+                        axis.text = element_text(size = 12),
+                        axis.text.y = element_text(vjust = 0.5),
+                        legend.position = "none"
+                )
+}
+
 #' Standardised color set for mossR
 #'
 #' Currently includes only 'lows' and 'highs'.
