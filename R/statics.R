@@ -20,17 +20,26 @@ theme_moss <- function() {
         )
 }
 
+#' MSc theme for mossR
+#'
+#' Does not currently include standardised format.
+
 theme_msc <- function() {
-        theme_minimal() +
-                theme(
-                        panel.grid = element_blank(),
-                        plot.title = element_text(hjust = 0.5, size = 20),
-                        plot.subtitle = element_text(hjust = 0.5, size = 16, color = "grey50"),
-                        axis.title = element_text(face = "bold", size = 14),
-                        axis.text = element_text(size = 12),
-                        axis.text.y = element_text(vjust = 0.5),
-                        legend.position = "none"
-                )
+        ggplot2::theme_minimal() +
+        ggplot2::theme(
+                panel.grid = ggplot2::element_blank(),
+                panel.background = ggplot2::element_rect(fill = "white", color = "white"),
+                plot.background = ggplot2::element_rect(fill = "white", color = "white"),
+                plot.title = ggplot2::element_text(hjust = 0.5, size = 20),
+                plot.subtitle = ggplot2::element_text(hjust = 0.5, size = 16, color = "grey50"),
+                plot.caption = ggplot2::element_text(size = 11, face = "italic"),
+                axis.title = ggplot2::element_text(face = "bold", size = 14),
+                axis.text = ggplot2::element_text(size = 12),
+                strip.text = ggplot2::element_text(size = 16, face = "bold", color = "grey40"),
+                strip.background = ggplot2::element_rect(color = "white"),
+                axis.text.y = ggplot2::element_text(vjust = 0.5),
+                legend.position = "none"
+        )
 }
 
 #' Standardised color set for mossR
