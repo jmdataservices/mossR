@@ -1,7 +1,7 @@
 Package: mossR
 Type: Package
 Title: A package to help JM Data Services use R more efficiently
-Version: 0.1.0
+Version: 0.9.0
 Author: Jamie McLaughlin
 Maintainer: Jamie McLaughlin <jamie@jmdataservices.co.uk>
 Description: The package contains simplistic additions for ggplot, such as themes and color stacks
@@ -20,5 +20,7 @@ Depends:
     jsonlite,
     GGally,
     AzureStor,
+    AzureKeyVault,
     uuid,
-    odbc
+    odbc,
+    rmarkdown
