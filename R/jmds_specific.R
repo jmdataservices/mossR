@@ -71,20 +71,25 @@ jmds_push_analysis_record <- function(destination_file, analysis_name, analysis_
 
 jmds_push_analysis <- function(input_filename, output_filename, analysis_name, analysis_desc) {
 
+        ip <- input_filename
+        op <- output_filename
+        an <- analysis_name
+        ad <- analysis_desc
+
         rmarkdown::render(
-                input = input_filename,
-                output_file = output_filename
+                input = ip,
+                output_file = op
         )
 
         jmds_push_analysis_storage(
-                file = output_filename,
-                destination_file = output_filename
+                file = op,
+                destination_file = op
         )
 
         jmds_push_analysis_record(
-                destination_file = output_filename,
-                analysis_name = analysis_name,
-                analysis_desc = analysis_desc
+                destination_file = op,
+                analysis_name = an,
+                analysis_desc = ad
         )
 
 }
